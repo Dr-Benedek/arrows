@@ -71,7 +71,7 @@ body{
     font-size: 16px;
     cursor: pointer;
     border-radius: 30px;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .startb:hover {
     background-color: #058a00;
@@ -88,7 +88,7 @@ body{
     font-size: 16px;
     cursor: pointer;
     border-radius: 30px;
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .stopb:hover {
         background-color: #ff0000;
