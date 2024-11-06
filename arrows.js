@@ -4,6 +4,8 @@ let directions = ['UP', 'DOWN', 'LEFT', 'RIGHT'];
 let currentDirection = '';
 let gameActive = false;
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 document.getElementById('start').addEventListener('click', startGame);
 document.getElementById('stop').addEventListener('click', stopGame);
 
@@ -27,7 +29,7 @@ function nextDirection() {
     document.getElementById('dph').textContent = currentDirection;
 }
 
-document.addEventListener('keydown', (event) => {
+document.addEventListener('keydown', async (event) => {
     if (!gameActive) return;
 
     let userKey = '';
@@ -45,9 +47,14 @@ document.addEventListener('keydown', (event) => {
         else{
             document.getElementById(userKey).style.backgroundColor = "red";
         }
-        setTimeout(nextDirection, 10);        
+        await sleep(200);
+        ColorBack(userKey);
+        nextDirection();
     }
 });
+function ColorBack(key){
+    document.getElementById(key).style.backgroundColor ='';
+}
 
 function updateScore() {
     document.getElementById('dph').textContent = `Összes: ${totalPresses}, Helyes: ${correctPresses}`;
