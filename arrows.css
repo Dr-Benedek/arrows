@@ -8,7 +8,7 @@ body{
     text-align: center;
     max-width: 40%;
     margin: auto;
-    padding: 25px;
+    padding: 35px;
     margin-top: 200px;
     font-size: large;
 }
@@ -72,13 +72,15 @@ body{
     cursor: pointer;
     border-radius: 30px;
     transition-duration: 0.2s;
+    border: 1px solid black;
+    width: 100px;
 }
 .startb:hover {
     background-color: #058a00;
     color: white;
   }
 .stopb{
-    background-color: #ec3b3b;
+    background-color: #bd5454;
     border: none;
     color: white;
     padding: 20px;
@@ -89,6 +91,8 @@ body{
     cursor: pointer;
     border-radius: 30px;
     transition-duration: 0.2s;
+    border: 1px solid black;
+    width: 100px;
 }
 .stopb:hover {
         background-color: #ff0000;

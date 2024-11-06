@@ -7,21 +7,24 @@
 </head>
 <body>
     <div class="flex-container">
-        <div class="display">
+
+        <div id="dph" class="display">
             DISPLAY_PLACEHOLDER
         </div>
 
         <div class="grid-container">
-            <div class="item1"><button>&#8593;</button></div>
-            <div class="item2"><button>&#8592;</button></div>
-            <div class="item3"><button>&#8595;</button></div>  
-            <div class="item4"><button>&#8594;</button></div>
+            <div class="item1"><button id="UP">&#8593;</button></div>
+            <div class="item2"><button id="LEFT">&#8592;</button></div>
+            <div class="item3"><button id="DOWN">&#8595;</button></div>  
+            <div class="item4"><button id="RIGHT">&#8594;</button></div>
         </div>
 
         <div class="btns">
-            <button class="startb">Start</button>
-            <button class="stopb">Stop</button>
+            <button id="start" class="startb">Start</button>
+            <button id="stop" class="stopb">Stop</button>
         </div>
+
     </div>
+    <script src="arrows.js"></script>
 </body>
 </html>
