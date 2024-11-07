@@ -68,9 +68,11 @@ document.addEventListener('keydown', async (event) => {
         if (userKey === currentDirection) {
             correctPresses++;
             document.getElementById(userKey).style.backgroundColor = "green";
+            document.getElementById('dph').style.color = "green";
             totalReactionTime += Date.now() - reactionTime;
         } else {
             document.getElementById(userKey).style.backgroundColor = "red";
+            document.getElementById('dph').style.color = "red";
         }
 
         await sleep(200);
@@ -81,6 +83,7 @@ document.addEventListener('keydown', async (event) => {
 
 function ColorBack(key) {
     document.getElementById(key).style.backgroundColor = '';
+    document.getElementById('dph').style.color = '';
 }
 
 function updateScore() {
