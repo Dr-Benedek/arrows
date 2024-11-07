@@ -99,3 +99,7 @@ body{
         color: white;
 }
 
+.timer{
+    max-width: 40%;
+    margin: auto;
+}
